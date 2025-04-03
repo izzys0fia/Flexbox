@@ -51,18 +51,36 @@
             background-color: #f8c8d8; 
         }
 		
-		@media (max-width:480px) {
-    main {
-        flex-wrap: nowrap; 
-		display: flex;
+		@media (max-width:37.5em) {
+	#mobile {display: block;}
+	#desktop {display: none;}
+    	
+	main {
+    		display: flex;
+    		flex-wrap: wrap; 
+	}
+
+	a {
+        text-decoration: underline;
+    }
+			
+   main {
+        display: flex;
+        flex-wrap: wrap; 
     }
 
     article {
-        max-width: 45%;
+        flex: 1 1 60%; 
     }
 
     article img {
-        max-width: 100%; 
+        width: 100%; 
+        height: auto; 
+    }
+
+    aside {
+        flex: 1 1 40%; 
+        max-width: 200px; 
     }
 
 }
