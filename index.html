@@ -52,34 +52,23 @@ background-color: #f8c8d8;
 }
 
 @media (max-width:37.5em) {
-
-main {
-display: flex;
-flex-wrap: wrap;
-}
-
-a {
-text-decoration: underline;
-}
-
-main {
-display: flex;
-flex-wrap: wrap;
-}
-
-article {
-flex: 1 1 60%;
-}
-
-article img {
-width: 100%;
-height: auto;
-}
-
-aside {
-flex: 1 1 40%;
-max-width: 200px;
-}
+  main {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    article, aside {
+        flex: 1 1 auto;
+        max-width: 60%;
+    }
+    aside {
+        max-width: 200px;
+        min-width: 180px;
+    }
+    article img {
+        max-width: 90%;
+    }
 
 }
 </style>
